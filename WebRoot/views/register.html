@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<link href="../css/register.css" rel="stylesheet"/>
+<title>注册</title>
+</head>
+<body>
+
+<header class="head">
+	
+</header>
+<div class="context">
+<div class="border">
+  <form action="registerService" method="post">
+   <p><span class="title">用户名</span>&nbsp;&nbsp;<span class="hint">字母开头,只支持大小写字母加数字</span></p>
+    <input class="username" name="username" type="text" value="${username!}" />
+     <p><span class="title">密码</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hint">字母开头,只支持大小写字母加数字</span></p>
+    <input class="password" name="password" type="password" value="" />
+    <p>再输入一次密码</p>
+    <input class="password2" name="password2" type="password" value="" />
+    <br>
+    <div class="box">
+    <span class="verify">
+    <img src="img" alt=""/>
+    <input name="verifyCode"/>
+    </span>
+    </div>
+    <br>
+    <div class="botton">
+    <input  type="submit" value="提交" />
+    <a href="login">已有登录账号</a>
+    </div>
+  </form>
+  <div class="hint">
+   <p>${result.status!}</p>
+  </div>
+ 
+</div>
+</div>
+
+<footer class="tail">
+	<div class="sig">
+    	<p>页脚</p>
+    </div>
+</footer>
+
+<!-- jQuery依赖 --> 
+<script src="../js/jquery-3.1.0.min.js"></script> 
+<script src="../js/registerAjax.js"></script>
+</body>
+</html>

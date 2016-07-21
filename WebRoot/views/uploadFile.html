@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>文件上传</title>
+</head>
+<body>
+	<form action="${basePath!}/upload/uploadFile" method="post" enctype="multipart/form-data">
+		<input id="file" name="file" type="file" />
+		<input type="submit" value="上传"  />
+	</form>
+	<!--  模拟数据库将文件名列出来 在真实情况下文件名由${文件名!}代替-->
+	<!-- 文件存入数据库是存入2进制的形式,对应mysql的blob属性,并选择对应大小的blob类型 -->
+	<!-- 通过ajax可以实现无刷新超链接点击下载功能 -->
+	<form action="${basePath!}/upload/downloadFile" method="post">
+	<p>test.jpg</p>
+		<input type="hidden" name="fileName" value="test.jpg"  />
+		<input type="submit" value="下载" />
+	</form>
+</body>
+</html>

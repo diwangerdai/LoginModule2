@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	min-width: 1024px;
+    min-height: 100%;
+    background-color: #fff;
+	margin:0;padding:0;
+}
+
+.head{
+	position: relative;
+    width: 100%;
+    height: 323px;
+    background-color: #00b38a;
+}
+
+.tail{
+	text-align:center;
+	color:#CCC;
+	height:30px;
+    position:fixed;
+	bottom:0px;
+	padding-bottom:30px;
+	margin: auto;
+	left:0;
+    right:0;
+    bottom:0;	
+}
+
+.context{
+	
+	text-align:center;
+	background:#FFF;
+	position:fixed;
+	width:300px;
+	height:400px;
+	margin: auto;
+	left:0;
+    right:0;
+    top:0;
+    bottom:0;	
+}
+.border{
+	border:1px solid #CCC;
+}
+.context p{
+	text-align:left;
+	margin-left:20px;
+}
+
+
+
+.username,.password,.password2{
+	width:250px;
+	height:25px;
+	background-color:#f8f8f8;
+	
+	
+}
+
+.box{
+	margin-top:8px;
+	
+}
+.verify{
+	vertical-align:middle;
+	
+	
+}
+.verify img{
+	vertical-align:middle;
+	
+}
+
+.verify input{
+	width:100px;
+	height:34px;;
+	background-color:#f8f8f8;
+}
+
+
+.botton{
+	width:100%;	
+	position:relative;
+}
+.botton input{
+	width:80px;
+	height:30px;
+	font-size:18px;
+	position:relative;
+	right:35px;
+	
+}
+.botton a{
+	width:80px;
+	height:30px;
+	font-size:18px;
+	position:relative;
+	left:35px;
+	
+}
+
+.hint{
+	font-size:10px;	
+	color:#CCC;
+}
+
+a:link { 
+color:#999; 
+text-decoration:none; 
+} 
+a:visited { 
+color:#999; 
+text-decoration:none; 
+} 
+a:hover { 
+color:#999; 
+text-decoration:none; 
+} 
+a:active { 
+color:#999;  
+text-decoration:none; 
+} 

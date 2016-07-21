@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<link href="../css/login.css" rel="stylesheet" />
+<title>登录</title>
+</head>
+<body>
+	<header class="head"> </header>
+	<div class="context">
+		<div class="border">
+			<form action="loginService" method="post">
+				<p>用户名</p>
+				<input class="username" name="username" type="text"
+					value="${username!}" />
+				<p>密码</p>
+				<input class="password" name="password" type="password" value="" />
+
+				<br>
+				<div class="box">
+					<span class="verify"> <img src="img" alt="" /> <input
+						name="verifyCode" />
+					</span>
+				</div>
+				<br>
+				<div class="botton">
+					<input type="submit" value="登录" /> <a href="login">注册</a>
+				</div>
+			</form>
+			<div class="hint">
+				<% if(has(result)){ %>
+				<p>${result.status}</p>
+				<% }%> <% if(has(result)&&result.loginError>0){ %>
+				<p>登录错误次数 : ${result.loginError}</p>
+				<% }%>
+			</div>
+		</div>
+	</div>
+
+	<footer class="tail">
+		<div class="sig">
+			<p>页脚</p>
+		</div>
+	</footer>
+
+	<!-- jQuery依赖 -->
+	<script src="../js/jquery-3.1.0.min.js"></script>
+	
+</body>
+</html>
